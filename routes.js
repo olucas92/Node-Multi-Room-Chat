@@ -52,7 +52,7 @@ var chat = io.off('/socket').on('connection', function (socket) {
           id: data
         });
       }
-      else if(roon.length >= 2) {
+      else if(room.length >= 2) {
 
         chat.emit('tooMany', {boolean: true});
       }
